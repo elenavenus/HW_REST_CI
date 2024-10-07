@@ -9,9 +9,14 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 11
-compileJava.options.encoding = 'UTF-8'
-compileTestJava.options.encoding = 'UTF-8'
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
 
 dependencies {
     testImplementation ("io.rest-assured:rest-assured:5.3.1")
