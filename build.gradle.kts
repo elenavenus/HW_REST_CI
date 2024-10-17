@@ -19,9 +19,9 @@ tasks.withType<JavaCompile> {
 }
 
 dependencies {
-    testImplementation ("io.rest-assured:rest-assured:5.3.1")
-    testImplementation ("org.junit.jupiter:junit-jupiter:5.6.1")
-    testImplementation ("io.rest-assured:json-schema-validator:4.3.1")
+    testImplementation("io.rest-assured:rest-assured:5.3.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.6.1")
+    testImplementation("io.rest-assured:json-schema-validator:4.3.1")
 }
 
 tasks.test {
